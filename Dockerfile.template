@@ -1,0 +1,8 @@
+FROM eclipse-mosquitto
+
+# RUN apk add jq
+
+COPY ./start.sh ./start.sh
+RUN ["chmod", "+x", "./start.sh"]
+
+ENTRYPOINT ["/bin/sh", "./start.sh"]

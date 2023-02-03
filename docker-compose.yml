@@ -1,0 +1,5 @@
+version: '2.1'
+services:
+  config-mqtt:
+    build: .
+    network_mode: host
