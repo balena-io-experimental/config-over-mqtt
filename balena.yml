@@ -1,0 +1,25 @@
+name: config-over-mqtt
+type: sw.application
+description: >-
+  Configure your applications without need to restart the containers by setting 
+  an application environment for this block which is propagated via mqtt.
+type: sw.block
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/balena-io-experimental/config-over-mqtt'
+  logo:
+    type: blob.asset
+    data:
+      url: 'https://raw.githubusercontent.com/balena-io-experimental/config-over-mqtt/master/logo.png'
+data:
+  defaultDeviceType: raspberrypi3
+  supportedDeviceTypes:
+    - raspberrypi4-64
+    - fincm3
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi400-64
+    - intel-nuc
+    - genericx86-64-ext
