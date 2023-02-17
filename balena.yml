@@ -1,5 +1,4 @@
 name: config-over-mqtt
-type: sw.application
 description: >-
   Configure your applications without need to restart the containers by setting 
   an application environment for this block which is propagated via mqtt.

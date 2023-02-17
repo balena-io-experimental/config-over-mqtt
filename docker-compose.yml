@@ -3,3 +3,4 @@ services:
   config-mqtt:
     build: .
     network_mode: host
+    restart: on-failure
